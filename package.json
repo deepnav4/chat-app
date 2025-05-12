@@ -1,0 +1,18 @@
+{
+  "name": "real-time-chat",
+  "version": "1.0.0",
+  "description": "A real-time chat application with temporary rooms",
+  "main": "index.js",
+  "scripts": {
+    "start:fe": "cd real-time-chat-fe && npm run dev",
+    "start:be": "cd real-time-chat-be && npm run dev",
+    "start": "concurrently \"npm run start:fe\" \"npm run start:be\"",
+    "install:all": "npm install && cd real-time-chat-fe && npm install && cd ../real-time-chat-be && npm install"
+  },
+  "keywords": ["chat", "websocket", "real-time"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
